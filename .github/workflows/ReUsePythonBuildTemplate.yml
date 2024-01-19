@@ -1,0 +1,10 @@
+name: Reuse Docker Build workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  docker:
+    uses: GayathriAV1/ReusableWorkflows/blob/main/.github/workflows/BuildPythonUsingDocker.yml@main
+    with:
+      image_name: my-Python-Docker-app
