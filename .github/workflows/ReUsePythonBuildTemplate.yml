@@ -8,6 +8,9 @@ jobs:
     uses: GayathriAV1/ReusableWorkflows/.github/workflows/BuildPythonUsingDocker.yml@main
     with:
       image_name: ${{vars.IMAGE_NAME}}
+      python_version: ${{vars.PYTHON_VERSION}}
+      python_linter: ${{vars.PYTHON_LINTER}}
+      python_test_framework: ${{vars.PYTHON_TEST_FRAMEWORK}}
       tag: $GITHUB_RUN_NUMBER
     secrets:
       registry_username: ${{secrets.REGISTRY_USERNAME}}
