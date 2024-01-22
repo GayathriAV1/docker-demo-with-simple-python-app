@@ -11,6 +11,7 @@ jobs:
       python_version: ${{vars.PYTHON_VERSION}}
       python_linter: ${{vars.PYTHON_LINTER}}
       python_test_framework: ${{vars.PYTHON_TEST_FRAMEWORK}}
+      req_file_path: ${{vars.REQ_FILE_PATH}}
       tag: $GITHUB_RUN_NUMBER
     secrets:
       registry_username: ${{secrets.REGISTRY_USERNAME}}
