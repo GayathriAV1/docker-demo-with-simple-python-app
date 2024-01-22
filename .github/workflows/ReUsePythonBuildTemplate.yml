@@ -7,7 +7,7 @@ jobs:
   docker:
     uses: GayathriAV1/ReusableWorkflows/.github/workflows/BuildPythonUsingDocker.yml@main
     with:
-      image_name: my-python-docker-app
+      image_name: ${{env.image_name}}
       tag: $GITHUB_RUN_NUMBER
     secrets:
       registry_username: ${{secrets.REGISTRY_USERNAME}}
